@@ -5,39 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <style>
-        header {
-            background-color:
-                #600275;
-            color: #ffffff;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 16px;
-
-        }
-
-        main {
-            background-color:#ffffff;
-            color: #600275;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 16px;
-        }
-        article{
-            display: flex;
-
-        }
-
-        img {
-            width: 80px;
-            height: 80px;
-        }
-
-        .artigo-autor {
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -47,7 +15,8 @@
     </header>
     <main>
         <article>
-            <img src="P1LLE.jpg" alt="cone quadrado com um broto de
+            <img src="P1LLE.jpg" 
+                    alt="cone quadrado com um broto de
                      planta verde crescendo no solo e uma engrenagem ao fundo, representando
                       inovação e dicas de agronegócio">
             <div>
@@ -59,16 +28,18 @@
             </div>
             <article>
                 <article>
-                    <img src="P1LLE.jpg" alt="cone quadrado com um broto de
-                             planta verde crescendo no solo e uma engrenagem ao fundo, representando
+                    <img src="P1LLE.jpg"
+                        alt="cone quadrado com um broto de
+                             planta verde crescendo no solo e uma engrenagem
+                              ao fundo, representando
                               inovação e dicas de agronegócio">
                     <div>
-                    <h2>Meu segundo post</h2>
-                    <p class="artigo-autor">Por: Artur Pedro</p>
-                    <p>qual sua duvida sobre o agro negocio?</p>
-                    <button>❤️ <span>0</span></button>
-                    <button>😂 <span>0</span></button>
-                </div>
+                        <h2>Meu segundo post</h2>
+                        <p class="artigo-autor">Por: Artur Pedro</p>
+                        <p>qual sua duvida sobre o agro negocio?</p>
+                        <button>❤️ <span>0</span></button>
+                        <button>😂 <span>0</span></button>
+                    </div>
                 </article>
     </main>
 </body>
@@ -81,14 +52,15 @@
         function BotaoClicado() {
             console.log("fui clicado");
             let texto = botao.querySelector("span");
-            if (curtiu === false){           
+            if (curtiu === false){
                 texto.textContent++;
                 curtiu = true;
-            }else{
+            } else {
                 texto.textContent--;
                 curtiu = false;
             }
-    } )
+        }
+    })
 
 
 </script>
