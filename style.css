@@ -1,25 +1,37 @@
+body {
+     
+    width: 100vw;
+}
+
 header {
             background-color:
                 #600275;
             color: #ffffff;
             text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 16px;
-
+        margin: 0 auto;
+        padding: 16px;
         }
 
         main {
             background-color:#ffffff;
-            color: #600275;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 16px;
+        color: #600275;
+        margin: 0 auto;
+        padding: 16px;
+
+            display: flex;
+            flex-wrap: wrap;
         }
-        article{
+        article {
             display: flex;
 
-        }
+        border: 1px solid #600275;
+
+        margin: 16px;
+        gap: 16px;
+        padding: 16px;
+
+        flex: 1 1 35%
+    }
 
         img {
             width: 80px;
